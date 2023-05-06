@@ -13,7 +13,3 @@ const surname = 'Smith'
 console.log(user, surname)
 
 // The issue with the callenge was that the comments were not inserted correctly and the console log input was also ivalid
-
-
-// CHALLENGE 2
-
