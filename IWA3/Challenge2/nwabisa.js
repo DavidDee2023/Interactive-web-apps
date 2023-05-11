@@ -5,4 +5,4 @@ const surname = "Gabe"
 const role = "CEO"
 
 const display= firstname + " " + surname + " (" + role + ")"
-document.querySelector('#Nwabisa').innerText = Nwabisa
+document.querySelector('#Nwabisa').innerText = display
