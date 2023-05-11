@@ -2,5 +2,5 @@
 
 // configuration.js
 
-const company = "ACME Inc.";
-const year = 2022
+export let company = 'ACME Inc.';
+export let year = 2022;
