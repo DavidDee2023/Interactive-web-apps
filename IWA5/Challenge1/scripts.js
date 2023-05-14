@@ -1,39 +1,40 @@
-let date = 2050;
-let status = "student";
-status = "parent";
-let count = 0;
 
-console.log('Your status is:', status);
-console.log('The year is:', date);
-console.log('The total holidays is:', count);
+const FREE_WARNING = 'Free shipping only applies to single customer orders'
+const BANNED_WARNIN = 'Unfortunately we do not ship to your country of residence'
+const NONE_SELECTED = 0
 
-if (date === 2050) {
-	console.log("January", 'New Year’s Day')
-	console.log("March", 'Human Rights Day')
+customers = 1
+const location = 'RSA'
+currency = null
 
-	date = 'April'
-	console.log(date, 'Family Day')
-	console.log(date, 'Freedom Day')
-	count = count + 4
-
-	if (status === "student") {
-	  console.log('June', 'Youth Day')
-	  count = count + 1
-  }
-
-	console.log('August', 'Women’s Day')
-	console.log('September', 'Heritage Day')
-
-	date = 'December'
-	console.log(date, 'Day of Reconciliation')
-	count = count + 3
-
-    if (status === "parent") {
-        console.log(date, 'Christmas Day')
-        count = count + 1
-    }
-  
-
-	console.log(date, 'Day of Goodwill')
-      count = count + 1
+if (location = RSA) { shipping === 400 && currency === R 
 }
+
+if (location = NAM) {shipping === 600 && currency === $
+} else { 
+	shipping === 800 && currency === $
+}
+
+if (location === 'NK' ) { 
+	console.log(BANNED_WARNIN) || console.log('price', currency, shoes + batteries + pens + shirts + shipping)
+}
+
+
+const shoes = 300 * 1;
+const toys = 100 * 5;
+const shirts = 150 * 'NONE_SELECTED';
+const batteries = 35 * 2;
+const pens = 5 * 'NONE_SELECTED'; 
+
+shipping = null
+currency = $
+
+if (shoes + batteries + pens + shirts >= 1000 || $60 ) {
+	if (location = NAM && customers < 2) {
+			if (location = RSA)
+		    shipping === 0 || calcShipping
+		}
+	}
+
+
+if (shipping === 0 && customers !== 1) { console.log(FREE_WARNING) }
