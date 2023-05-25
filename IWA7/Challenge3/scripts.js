@@ -11,15 +11,11 @@ const divider = '----------------------------------'
 // Only change below this line
 
 const owed = parseInt(leoBalance)+ parseInt(sarahBalance)
-const leo = `${leoName} ${leoSurname}(owed: R ${leoBalance})\n`
-const sarah = `${sarahName} ${sarahSurname}(owed: R ${sarahBalance})\n` + "\n"
+const leo = `${leoName} ${leoSurname}(owed: R ${leoBalance * -1})\n`
+const sarah = `${sarahName} ${sarahSurname}(owed: R ${sarahBalance * -1})\n` + "\n"
 
-const total = " \n Total amount owed: R"
+const total = [(" \n Total amount owed: R")]
 const result = leo + sarah + divider + total + owed  + `\n` + divider
 
 
-        
-        
-
     console.log(result);
-

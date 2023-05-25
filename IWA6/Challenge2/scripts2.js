@@ -18,4 +18,3 @@ if (hourOfDay && minuteOfDay == 0 || hourOfDay  && minuteOfDay !== null ) {
 	console.log(startingAfterTax)
 	console.log(balance.toFixed(2))
 }
-	
