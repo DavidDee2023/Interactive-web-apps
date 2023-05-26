@@ -53,13 +53,17 @@ const futureId = 9
 
 // Do not change code above this comment
 
-console.log(holidays.futureId.name || (`'ID ${futureId} not created yet'`)
+console.log(holidays.futureId.name || (`'ID ${futureId} not created yet'`))
+
+const christmasNew = holidays[6]
+christmasNew.date.setHours('00,00')
+christmasNew.name = 'X-mas Day'
 
 let copied = holidays[christmasNew]
 copied.name = 'X-mas Day' 
 let correctDate = new Date (`${copied.Date}`)
-correctDate.hours = 0
-correctDate.minutes = 0
+correctDate.sethours = ('00')
+correctDate.setminutes = ('00')
 isEarlier = copied.date < holidays[6].date
 console.log('New date is earlier:', isEarlier)
 if (isEarlier) copied.date = correctDate
