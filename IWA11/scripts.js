@@ -1,22 +1,22 @@
 // script.js
 
-const 1-root = document.querySelector("#order1"),
-const 1-biscuits = document.querySelector("#biscuits"),
-const 1-donuts= document.querySelector("#donuts"),
-const 1-pancakes = document.querySelector("#pancakes"),
-const 1-status = document.querySelector("#status")
+const 1-root = document.querySelector('[data-key="order1"]'),
+const 1-biscuits = document.querySelector('[data-key="biscuits"]'),
+const 1-donuts= document.querySelector('[data-key="donuts"]'),
+const 1-pancakes = document.querySelector('[data-key="pancakes"]'),
+const 1-status = document.querySelector('[data-key="status"]')
 
-const 2-root: document.querySelector("#order2"),
-const 2-biscuits = document.querySelector("#biscuits"),
-const 2-donuts = document.querySelector("#donuts"),
-const 2-pancakes = document.querySelector("#pancakes"),
+const 2-root: document.querySelector('[data-key="order2"]'),
+const 2-biscuits = document.querySelector('[data-key="biscuits"]'),
+const 2-donuts = document.querySelector('[data-key="donuts"]'),
+const 2-pancakes = document.querySelector('[data-key="pancakes"]'),
 const 2-status = document.querySelector("#status")
 
-const 3-root = document.querySelector("#order3"),
-const 3-biscuits = document.querySelector("#biscuits"),
-const 3-donuts = document.querySelector("#donuts"),
-const 3-pancakes = document.querySelector("#pancakes"),
-const 3-status = document.querySelector("#status")
+const 3-root = document.querySelector('[data-key=order3"]'),
+const 3-biscuits = document.querySelector('[data-key="biscuits"]'),
+const 3-donuts = document.querySelector('[data-key="donuts"]'),
+const 3-pancakes = document.querySelector('[data-key="pancakes"]'),
+const 3-status = document.querySelector('[data-key="status"]')
 
 1-biscuits= 1-root.biscuits,
 1-donuts = 1-root.donuts,
