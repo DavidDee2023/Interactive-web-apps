@@ -53,14 +53,14 @@ const futureId = 9
 
 // Do not change code above this comment
 
-console.log(holidays.futureId.name || (`'ID ${futureId} not created yet'`))
+console.log(holidays || (`'ID ${futureId} not created yet'`))
 
 const christmasNew = holidays[6]
 christmasNew.date.setHours('00,00')
-christmasNew.name = 'X-mas Day'
+christmasNew.name = 'Christmas Day'
 
-let copied = holidays[christmasNew]
-copied.name = 'X-mas Day' 
+copied = holidays[christmasNew]
+copied = {name: 'X-mas Day'}
 let correctDate = new Date (`${copied.Date}`)
 correctDate.sethours = ('00')
 correctDate.setminutes = ('00')
@@ -100,8 +100,8 @@ const firstMonth = firstHolidayTimestamp.getMonth
 const lastDay = lastHolidayTimestamp.getDate
 const lastMonth = lastHolidayTimestamp.getMonth
 
-console.log('{firstDay}/{firstMonth}/{currentYear}')
-console.log('{lastDay}/{lastMonth}/{currentYear}')
+console.log(`'${firstDay}/${firstMonth}/${currentYear}'`)
+console.log(`'${lastDay}/${lastMonth}/${currentYear}'`)
 
 const randomHoliday = holidays[Math.random]
 console.log(randomHoliday.date)
