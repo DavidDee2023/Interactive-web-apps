@@ -36,3 +36,5 @@ if (shipping === 0 && customers !== 1) { console.log(FREE_WARNING) }
 if (location === 'NK' ) { 
 	console.log(BANNED_WARNIN) || console.log('price', currency, shoes + batteries + pens + shirts + shipping)
 }
+
+//Have to do research about the code

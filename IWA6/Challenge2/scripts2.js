@@ -9,7 +9,7 @@ const minuteOfDay = 00;
 // Only change below this 
 
 const taxAsDecimal = tax / 800
-  const startingAfterTax = salary * 1 - taxAsDecimal
+  const startingAfterTax = [salary * 1] - taxAsDecimal
 	const balance =  transport - food - rent
 
 if (hourOfDay && minuteOfDay == 0 || hourOfDay  && minuteOfDay !== null ) {
