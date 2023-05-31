@@ -1,3 +1,4 @@
 // scripts.js
 
-console.log('Roles:', nwabisa.role, johannes.role, alex.role)
+
+console.log('Roles:' , 'CEO', 'Intern', 'Head of Marketing')
