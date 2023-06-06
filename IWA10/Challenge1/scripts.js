@@ -59,10 +59,10 @@ const copied = holidays[christmas];
 copied.name = "X-mas";
 
 const correctDate = new Date (`${copied.date}`);
-correctDate.setHours (00);
-correctDate.setMinutes(00);
+correctDate.setHours (0);
+correctDate.setMinutes(0);
 
-const isEarlier = copied.date < holidays[6].date
+const isEarlier = copied.date.getTime() <= holidays[6].date;
 console.log('New date is earlier:', isEarlier)
 
 if (isEarlier) {
@@ -104,13 +104,13 @@ const lastHolidayTimestamp = Math.max(
     Date.parse(holidays[8].date),
 );
 
-const firstDay = new Date (firstHolidayTimestamp).getDate().toString;
-const firstMonth = new Date (firstHolidayTimestamp).getMonth().toString;
-const lastDay = new Date (lastHolidayTimestamp).getDate().toString;
-const lastMonth = new Date(lastHolidayTimestamp).getMonth().toString;
+const firstHoliday = new Date(firstHolidayTimestamp).toLocaleDateString('en-GB', {day: '2-digit',month: '2-digit',year: 'numeric', });
+const lastHoliday = new Date(lastHolidayTimestamp).toLocaleDateString('en-GB', {day: '2-digit',month: '2-digit',year: 'numeric',});
 
-console.log(`${firstDay}/${firstMonth}/${currentYear}`);
-console.log(`${lastDay}/${lastMonth}/${currentYear}`);
 
-const randomHoliday = holidays[Math.floor(Math.random() * 9)];
-console.log(randomHoliday.date.toLocaleDateString("en-GB"));
+console.log(`First holiday: ${firstHoliday}`);
+console.log(`Last holiday: ${lastHoliday}`);
+
+const randomHoliday = holidays[Math.floor(Math.random() * 9)].date.toLocaleDateString('en-GB',{day: '2-digit',month: '2-digit',year: 'numeric',});
+
+console.log(`Random holiday: ${randomHoliday}`);
