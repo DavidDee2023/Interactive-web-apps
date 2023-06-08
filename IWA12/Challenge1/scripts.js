@@ -32,8 +32,6 @@ const STATUS_MAP = {
   document.querySelector('[id="foo$bar"] .item')
   );  */
 
-
-
 const status1 = document.querySelectorAll('.status1.');
 const reserve1 = document.querySelectorAll('.reserve');
 const checkout1 = document.querySelectorAll('.checkout');
@@ -50,19 +48,22 @@ const checkout3 = document.querySelectorAll('.checkout');
 const checkin3 = document.querySelectorAll('.checkin'); 
 
 checkin1.0.color = none
-status.0.style.color = STATUS_MAP.status.color
-reserve.0 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.0 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.0 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+status.0.style.color = STATUS_MAP.status.textContent;
+
+reserveButton1 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
+checkoutButton1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+checkinButton1 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
 
 checkin2.1.color = none
-status.1.style.color = STATUS_MAP.status.color
-reserve.1 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.1 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+status.style.color = STATUS_MAP.textContent;
+
+reserveButton2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
+checkoutButton2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+checkinButton2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
 
 checkin3.2.color = none
 status.2.style.color = STATUS_MAP.status.color
-reserve.2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled' 
+
+reserveButton3 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
+checkoutButton3 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
+checkinButton3 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled' 
