@@ -5,10 +5,10 @@ hobby = 'Coding';
 const logTwice = () => {
   console(parameter)
   console(parameter)
-}
+};
 
 function hobby () {
-  logTwice(`Hello, ${name} (${age}). I love ${hobby}!`)
-}
+  logTwice(`Hello, ${firstname} (${age}). I love ${hobby}!`)
+};
 
 hobby()
