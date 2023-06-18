@@ -28,42 +28,56 @@ const STATUS_MAP = {
 }
 
 // Edit below line
-/*  console.log(
-  document.querySelector('[id="foo$bar"] .item')
-  );  */
+/*const status1 = document.querySelector('#book1 .status');
+const reserve1 = document.querySelector('#book1 .reserve');
+const checkout1 = document.querySelector('#book1 .checkout');
+const checkin1 = document.querySelector('#book1 .checkin');
 
-const status1 = document.querySelectorAll('.status1.');
-const reserve1 = document.querySelectorAll('.reserve');
-const checkout1 = document.querySelectorAll('.checkout');
-const checkin1 = document.querySelectorAll('.checkin');
+const status2 = document.querySelector('#book2 .status');
+const reserve2 = document.querySelector('#book2 .reserve');
+const checkout2 = document.querySelector('#book2 .checkout');
+const checkin2 = document.querySelector('#book2 .checkin');
 
-const status2 = document.querySelectorAll('.status2');
-const reserve2 = document.querySelectorAll('.reserve');
-const checkout2 = document.querySelectorAll('.checkout');
-const checkin2 = document.querySelectorAll('.checkin');
+const status3 = document.querySelector('#book3 .status');
+const reserve3 = document.querySelector('#book3 .reserve');
+const checkout3 = document.querySelector('#book3 .checkout');
+const checkin3 = document.querySelector('#book3 .checkin');
 
-const status3 = document.querySelectorAll('.status3');
-const reserve3 = document.querySelectorAll('.reserve');
-const checkout3 = document.querySelectorAll('.checkout');
-const checkin3 = document.querySelectorAll('.checkin'); 
+status1.style.color = STATUS_MAP.overdue.color;
+reserve1.disabled = !STATUS_MAP.overdue.canReserve;
+checkout1.disabled = !STATUS_MAP.overdue.canCheckout;
+checkin1.disabled = !STATUS_MAP.overdue.canCheckIn;
+reserve1.style.filter = 'grayscale(100%)';
+checkout1.style.filter = 'grayscale(100%)';
+checkin1.style.filter = 'grayscale(100%)';
 
-checkin1.0.color = none
-status.0.style.color = STATUS_MAP.status.textContent;
+status2.style.color = STATUS_MAP.reserved.color;
+reserve2.disabled = !STATUS_MAP.reserved.canReserve;
+checkout2.disabled = !STATUS_MAP.reserved.canCheckout;
+checkin2.disabled = !STATUS_MAP.reserved.canCheckIn;
+reserve2.style.filter = 'grayscale(100%)';
+checkout2.style.filter = 'grayscale(100%)';
+checkin2.style.filter = 'grayscale(100%)';
 
-reserveButton1 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkoutButton1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkinButton1 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+status3.style.color = STATUS_MAP.shelf.color;
+STATUS_MAP.shelf.canReserve;
+checkout3.disabled = !STATUS_MAP.shelf.canCheckout;
+checkin3.disabled = !STATUS_MAP.shelf.canCheckIn;
+reserve3.style.filter = 'grayscale(100%)';
+checkout3.style.filter = 'grayscale(100%)';
+checkin3.style.filter = 'grayscale(100%)'; */
+ 
+const statuses = document.querySelectorAll('.status');
+const reserveButtons = document.querySelectorAll('.reserve');
+const checkoutButtons = document.querySelectorAll('.checkout');
+const checkinButtons = document.querySelectorAll('.checkin');
 
-checkin2.1.color = none
-status.style.color = STATUS_MAP.textContent;
+statuses.forEach(function(status, index) {
+    const bookStatus = status.textContent;
+    const statusInfo = STATUS_MAP[bookStatus];
 
-reserveButton2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkoutButton2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkinButton2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
-
-checkin3.2.color = none
-status.2.style.color = STATUS_MAP.status.color
-
-reserveButton3 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkoutButton3 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkinButton3 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled' 
+    status.style.color = statusInfo.color;
+    reserveButtons[index].disabled = !statusInfo.canReserve;
+    checkoutButtons[index].disabled = !statusInfo.canCheckout;
+    checkinButtons[index].disabled = !statusInfo.canCheckIn;
+});
