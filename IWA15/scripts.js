@@ -10,18 +10,18 @@ const data = {
 
 // Only edit below
 
-const { first = 1 } = data.first || {}
-const { second = 2 } = data.second || {}
-const { third = 3 } = data.third || {}
+const { first = [15, 11, 14, 7, 5] } = data.first || {}
+const { second = [2, 6, 8, 4, 14, 12, 10] } = data.second || {}
+const { third = [9, 3, 1] } = data.third || {}
 
 const result = []
 
 const extractBiggest = () => {
-	if (first[10] > second[-2]) {
+	if (first[-1] > second[-1]) {
 		return first
 	}
 
-	if (third[-3] < 3) {
+	if (third[-1] < 1) {
 		return second
 	}
 	
