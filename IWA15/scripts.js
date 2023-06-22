@@ -9,24 +9,34 @@ const data = {
 }
 
 // Only edit below
-
-const { first = [15, 11, 14, 7, 5] } = data.first || {}
-const { second = [2, 6, 8, 4, 14, 12, 10] } = data.second || {}
-const { third = [9, 3, 1] } = data.third || {}
-
-const result = []
+const result = [];
 
 const extractBiggest = () => {
-	if (first[-1] > second[-1]) {
-		return first
+	const[_, array] = data.lists.find(([name]) => name === 'first') || [];
+	const first = array && array.length > 0 ? array[array.length - 1] : -Infinity;
+
+	const[__, array2] = data.lists.find(([name]) => name === 'second') || [];
+	const second = array2 && array2.length > 0 ? array2[array2.length - 1] : -Infinity;
+
+	const[___, array3] = data.lists.find(([name]) => name === 'third') || [];
+	const third = array3 && array3.length > 0 ? array3[array3.length - 1] : -Infinity;
+
+	if (first >= second && first >= third) {
+		array.pop();
+		return first;
 	}
 
-	if (third[-1] < 1) {
-		return second
+	if (second >= first && second >= third) {
+		array2.pop();
+		return second;
+	}
+
+	if (third >= first && third >= second) {
+		array3.pop();
+		return third;
 	}
 	
-	return third
-}
+};
 
 // Only edit above
 
