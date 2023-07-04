@@ -14,8 +14,8 @@ import { BOOKS_PER_PAGE  } from './data.js';
  */
 
 
-let matches = books;
-let page = 1;
+const matches = books;
+const page = 1;
 
 if (!books || !Array.isArray(books)) {
   throw new Error('Source required');
@@ -169,13 +169,13 @@ const cancelButton = document.querySelector('.overlay__button[data-search-cancel
 
 cancelButton.addEventListener('click', () => {
   if (dataSearchOverlay.open === false) {
-    // Event handling code here
+    
   }
 });
 
 data-settings-cancel.addEventListener('click', () => {
   if (document.querySelector('[data-settings-overlay]').open === false) {
-    // Event handling code here
+    
   }
 });
 
@@ -187,7 +187,7 @@ data-settings-form.addEventListener('submit', (event) => {
 
 data-list-close.addEventListener('click', () => {
   if (data-list-active.open === false) {
-    // Event handling code here
+    
   }
 });
 
