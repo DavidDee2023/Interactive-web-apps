@@ -2,10 +2,8 @@
  * This code is a combination of JavaScript and HTML code. It is handling some actions and events related to a book listing.
  */
 
-import { books } from './data.js';
-import { authors } from './data.js';
-import { genres  } from './data.js';
-import { BOOKS_PER_PAGE  } from './data.js';
+import { BOOKS_PER_PAGE, authors, genres, books } from './data.js';
+
 
 /**
  * First, there are some variable assignments and checks at the beginning of the code. 
@@ -16,12 +14,12 @@ import { BOOKS_PER_PAGE  } from './data.js';
 
 const matches = books;
 const page = 1;
+const range = [0, BOOKS_PER_PAGE];
 
 if (!books || !Array.isArray(books)) {
   throw new Error('Source required');
 }
 
-let range = 14;
 if (!range || range.length < 2) {
   throw new Error('Range must be an array with two numbers');
 }
@@ -319,6 +317,7 @@ const listBlurElement = document.querySelector('[data-list-blur]');
 const listTitleElement = document.querySelector('[data-list-title]');
 const listSubtitleElement = document.querySelector('[data-list-subtitle]');
 const listDescriptionElement = document.querySelector('[data-list-description]');
+
 
 listActiveElement.open = true;
 listBlurElement.style.backgroundImage = `url(${active.image})`;
