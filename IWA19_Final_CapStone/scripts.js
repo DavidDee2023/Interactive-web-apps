@@ -352,7 +352,7 @@ dataSettingsCancel.addEventListener('click', () => {
   dataSettingsOverlay.close()
 });
 
-//The css object define two themes, 'day' and 'night'
+//The css object defines two themes, 'day' and 'night'
 const css = {
   day: ['255, 255, 255', '10, 10, 20'],
   night: ['10, 10, 20', '255, 255, 255']
